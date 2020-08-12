@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CRUD DE CLIENTES</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+	
+    <p>Preencha os Dados Abaixo para Salvar o Clinte.</p>
+	<form action="/new" method="POST"> 
+		
+		<p>
+			<label> Nome: <input type="text" name="nome"/></label>
+		</p>
+		
+		<p>
+			<label> Idade: <input type="number" name="idade"/></label>
+		</p>
+	
+		<p>
+			<label> UF:
+				<select name="uf"> 
+					<option>DF</option>
+					<option>SP</option>
+					<option>BA</option>
+				</select>
+			</label>			
+		</p>
+		
+		<p>
+			<a href="/"> Cancelar</a> | <input type="submit" value="Salvar"/>
+		</p>
+	</form>
+  </body>
+</html>
